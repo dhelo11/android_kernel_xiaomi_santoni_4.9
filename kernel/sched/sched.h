@@ -2743,7 +2743,6 @@ extern int alloc_related_thread_groups(void);
 
 extern unsigned long all_cluster_ids[];
 
-extern void check_for_migration(struct rq *rq, struct task_struct *p);
 
 static inline int is_reserved(int cpu)
 {
@@ -2849,7 +2848,6 @@ static inline enum sched_boost_policy task_boost_policy(struct task_struct *p)
 {
 	return SCHED_BOOST_NONE;
 }
-static inline void check_for_migration(struct rq *rq, struct task_struct *p) { }
 
 static inline int sched_boost(void)
 {
