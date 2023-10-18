@@ -2734,7 +2734,6 @@ extern int alloc_related_thread_groups(void);
 
 extern unsigned long all_cluster_ids[];
 
-
 static inline int is_reserved(int cpu)
 {
 	struct rq *rq = cpu_rq(cpu);
